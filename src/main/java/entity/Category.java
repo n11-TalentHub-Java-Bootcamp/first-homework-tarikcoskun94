@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "CATEGORY")
+@Table(name = "CATEGORIES")
 public class Category {
 
     @SequenceGenerator(name = "generator", sequenceName = "category_id_seq")

@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "PRODUCT")
+@Table(name = "PRODUCTS")
 public class Product {
 
     @SequenceGenerator(name = "generator", sequenceName = "product_id_seq")

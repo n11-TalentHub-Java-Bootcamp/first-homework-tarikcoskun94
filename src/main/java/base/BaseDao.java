@@ -4,6 +4,7 @@ import hibernate.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+
 public class BaseDao {
 
     private SessionFactory sessionFactory;

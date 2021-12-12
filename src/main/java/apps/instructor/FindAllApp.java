@@ -1,17 +1,16 @@
-package apps;
+package apps.instructor;
 
 import entity.Product;
 import entityservice.ProductEntityService;
-import java.math.BigDecimal;
 import java.util.List;
 
 
-public class FindGeLeApp {
+public class FindAllApp {
 
     public static void main(String[] args) {
 
         ProductEntityService service = new ProductEntityService();
-        List<Product> productList = service.findAllProductListByPriceGeAndPriceLe(BigDecimal.valueOf(100), BigDecimal.valueOf(1000));
+        List<Product> productList = service.findAll();
 
         for (Product product : productList) {
             System.out.println(product);

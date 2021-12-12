@@ -1,4 +1,4 @@
-package apps;
+package apps.instructor;
 
 import dto.ProductDetailDto;
 import entityservice.ProductEntityService;

@@ -88,5 +88,4 @@ public class ProductDao extends BaseDao {
 
         return query.list();
     }
-
 }

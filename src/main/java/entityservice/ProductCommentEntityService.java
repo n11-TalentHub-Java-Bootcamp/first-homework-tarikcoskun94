@@ -1,6 +1,7 @@
 package entityservice;
 
 import dao.ProductCommentDao;
+import dto.ProductCommentCountDto;
 import dto.ProductCommentDetailDto;
 import entity.ProductComment;
 import java.util.ArrayList;
@@ -37,5 +38,10 @@ public class ProductCommentEntityService {
         }
 
         return productCommentDetailDtoList;
+    }
+
+    public List<ProductCommentCountDto> findAllProductWithCommentCount() {
+
+        return productCommentDao.findAllProductWithCommentCount();
     }
 }

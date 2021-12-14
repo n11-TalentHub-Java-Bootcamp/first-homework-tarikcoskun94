@@ -11,6 +11,10 @@ public class FindByProductIdApp {
         ProductCommentEntityService productCommentEntityService = new ProductCommentEntityService();
         List<ProductCommentDetailDto> productCommentDetailDtoList = productCommentEntityService.findAllCommentByProductId(6L);
 
+        if (productCommentDetailDtoList.isEmpty()) {
+            System.out.println("Any comment was not found for this product.");
+        }
+
         for (ProductCommentDetailDto productCommentDetailDto : productCommentDetailDtoList) {
             System.out.println(productCommentDetailDto);
         }

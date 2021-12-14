@@ -11,6 +11,10 @@ public class FindAllWithCommentCountApp {
         ProductCommentEntityService productCommentEntityService = new ProductCommentEntityService();
         List<ProductCommentCountDto> productCommentCountDtoList = productCommentEntityService.findAllProductWithCommentCount();
 
+        if (productCommentCountDtoList.isEmpty()) {
+            System.out.println("No product.");
+        }
+
         for (ProductCommentCountDto productCommentCountDto : productCommentCountDtoList) {
             System.out.println(productCommentCountDto);
         }
